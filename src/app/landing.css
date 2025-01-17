@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #0e161e;
+    --secondary-color: #1d2c3b;
+    --accent-color: #3498db;
+    --text-color: #000000;
+    --border-color: #eaeaea;
+    --background-light: #eaeaea;
+  }
+  
+  .page {
+    padding: 4rem 2rem;
+    background: var(--background-light);
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 3rem;
+  }
+  
+  .title {
+    text-align: start;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+  }
+  
+  .policy-container {
+    text-align: justify;
+    margin: 0 0;
+  }
+  
+  .policy-section {
+    line-height: 1.2;
+    color: var(--text-color);
+  }
+  
+  .policy-section h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .policy-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .policy-section ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .policy-section li {
+    margin-bottom: 0.75rem;
+    position: relative;
+  }
+  
+  .policy-section li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: -1.2rem;
+  }
+  
+  .update-date {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .page {
+      padding: 2rem 1rem;
+    }
+    
+    .main {
+      padding: 2rem 1.5rem;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .policy-section h3 {
+      font-size: 1.2rem;
+    }
+    
+    .policy-section p {
+      font-size: 0.9rem;
+    }
+
+    .policy-section ul {
+      font-size: 0.9rem;
+    }
+
+    .policy-section li {
+      font-size: 0.9rem;
+    }
+
+    .update-date {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Smooth transitions */
+  * {
+    transition: all 0.3s ease;
+  }
